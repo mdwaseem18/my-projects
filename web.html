@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Application</title>
+
+</head>
+<body>
+<header>
+    <h1 class="h1">Welcome to Your Web Application</h1>
+</header>
+
+<main>
+    <section>
+        <h2>About Us</h2>
+        <p>This is a simple web application created using HTML and CSS.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name<small class="s">*</small>:</label>
+            <input type="text" id="name"  placeholder="Your Name" name="name" required>
+            <label for="email">Email<small class="s">*</small>:</label>
+            <input type="email" id="email"  placeholder="Your Email"  name="email" required>
+
+            <label for="message">Message<small class="s">*</small>:</label>
+            <textarea id="message" name="message"  placeholder="Your Message"  required></textarea>
+
+            <button type="submit">Submit</button>
+            <button class="b" type="submit">cancel</button>
+        </form>
+    </section>
+</main>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+ .h1{
+     color:red;
+
+ }
+ .h2 {
+    color: #fff;
+}
+
+section {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: green;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+
+}
+.b{
+    background-color: red;
+    color: black;
+}
+s{
+   color:red;
+}
+
+</style>
+</body>
+</html>
